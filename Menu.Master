@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="ShopManagement.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="\Styles\MasterStyles.css" type="text/css" />
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <div>          
+                <table>
+                    <tr>
+                        <td>
+                            <asp:Panel ID="Panel1" runat="server" Height="640px" Width="250px" BackColor="#CC99FF" CssClass="panelMenu">
+                                <asp:Image ID="Image1" runat="server" Height="80px" ImageUrl="/Image/Logo1.png" width="120px" />
+                                <ul>
+                                    <li><a href="DashBoard.aspx">DashBoard</a></li>
+                                    <li><a href="PageItem.aspx">ITEM</a></li>
+                                     <li><a href="PageClient.aspx">CLIENT</a></li>
+                                     <li><a  href="PageReplenishment.aspx">REPLENISHMENT</a></li>
+                                   <li><a href="PageSales.aspx">SALES</a></li>
+                                    <li><a href="PagePayment.aspx">PAYMENT</a></li>
+                                     <li><a href="IncomeStatement.aspx">INCOME STATEMENT</a></li>
+                                     <li><a href="Stock.aspx">STOCK</a></li>
+                                     <li><a href="Expense.aspx">EXPENSE</a></li>
+                                     <li><a href="Filling.aspx">Document</a></li>
+                                </ul>
+
+                            </asp:Panel>
+                        </td>
+                        <td>
+                            <asp:Panel ID="Panel2" runat="server"  Height="640px" Width="1300px">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </asp:Panel>
+                        </td>
+                    </tr>
+                </table>
+            
+        </div>
+    </form>
+</body>
+</html>
